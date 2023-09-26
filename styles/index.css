@@ -8,17 +8,85 @@
 
 body{
     font-family: 'Rubik', sans-serif;
-    background-color: white;
+    background-image: url(../assets/img/13167.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+
+.smoke {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.smoke span{
+    position: relative;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 40px;
+    animation: animate 3s linear infinite;
+}
+
+.smoke span:nth-child(1){
+    animation-delay: 0.2s;
+}
+
+.smoke span:nth-child(2){
+    animation-delay: 0.4s;
+}
+
+.smoke span:nth-child(3){
+    animation-delay: 0.6s;
+}
+
+.smoke span:nth-child(4){
+    animation-delay: 0.8s;
+}
+
+.smoke span:nth-child(5){
+    animation-delay: 1s;
+}
+
+.smoke span:nth-child(6){
+    animation-delay: 1.2s;
+}
+
+.smoke span:nth-child(7){
+    animation-delay: 1.4s;
+}
+
+@keyframes animate{
+    0% {
+        filter: blur(0);
+    }
+    40%{
+        filter: blur(20px);
+    }
+    80%{
+        filter: blur(20px)
+    }
+    100%{
+        filter: blur(20px)
+    }
 }
 
 nav {
-    background-color: black;
+    background-color: white;
 }
 
 footer {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
     text-align: center;
     padding: 10px;
-    background-color: #B578F6;
+    background-image: radial-gradient(circle at 100% 0%, #9b5bd9 0, #7a4ed7 25%, #4d42d4 50%, #0039d1 75%, #0033cf 100%);
     color:white;
     border-top: 1px solid #ccc;
 }
